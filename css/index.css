@@ -1,0 +1,25 @@
+*{margin: 0;padding:0;}
+@font-face{font-family:Exo;font-style:normal;font-weight:100;src:local('Exo Thin'),local('Exo-Thin'),url(https://dn-linzeng.qbox.me/Exo-Thin.woff) format('woff')}
+@font-face{font-family:Exo;font-style:normal;font-weight:400;src:local('Exo Regular'),local('Exo-Regular'),url(https://dn-linzeng.qbox.me/Exo-Regular.woff) format('woff')}
+body{background: url("../img/bg.jpg") 100% fixed;}
+.head,.weibo{font-family: exo,"微软雅黑";font-size: 3rem;text-align: center;color: #000;}
+.head,.cont{padding:10%;}
+content{overflow: hidden;}
+.weibo{padding:5%;}
+.cont{text-align: center;}
+.btn{border: 2px #000 solid;border-radius: 5px; padding: 10px 20px;text-align: center;color: #000;background: rgba(0,0,0,0);}
+.show{
+	position:relative;
+	animation: show 3s;
+	-weblit-animation: show 3s;
+}
+@keyframes show
+{
+from {top:100%;}
+to {top:0;}
+}
+@-webkit-keyframes show
+{
+from {top:100%;}
+to {top:0;}
+}
