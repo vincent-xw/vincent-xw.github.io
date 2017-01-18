@@ -1,0 +1,322 @@
+body{
+	background: url("../img/bg.jpg") no-repeat top center;
+}
+.frame{position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	color: #FFF;
+	text-align: center;
+	display: block;
+}
+.headPortrait{
+	margin-left: -100px;
+	position: absolute;
+	border: 2px solid #FFF;
+	top: 3%;
+	animation: showphoto 1s;
+	-moz-animation: showphoto 1s;
+	-webkit-animation: showphoto 1s;
+}
+.brfintr{
+	text-align: center;
+	overflow: hidden;
+}
+.info{
+	color: #FFF;
+	position: absolute;
+	top: 35%;
+	display: inline-block;
+	background: rgba(0,0,0,0.7);
+	font-size: 2.5rem;
+	width: 60%;
+	margin-left: -30%;
+	padding: 2% 3%;
+	border-radius: 10px;
+	opacity: 0;
+	animation: showinfo 1s 1s forwards;
+	-moz-animation: showinfo 1s 1s forwards;
+	-webkit-animation: showinfo 1s 1s forwards;
+}
+#next{
+	font-family: "微软雅黑";
+	background: #FFF;
+	color: #000;
+}
+.frame2{
+	position: absolute;
+	animation: slideup 2s 1s forwards;
+	-moz-animation: slideup 2s 1s forwards;
+	-webkit-animation: slideup 2s 1s forwards;
+}
+.show{
+	animation: show 2s 2s forwards;
+	-moz-animation: show 2s 2s forwards;
+	-webkit-animation: show 2s 2s forwards;
+}
+#frame2,#frame3{display: none;}
+.para{text-align: left;}
+.skillinfo,.projectinfo{
+	display: inline-block;
+	width: 70%;
+	margin-left: -35%;
+	position: absolute;
+	top: 30%;
+}
+.skill{
+	margin: 4% 2%;
+	position: relative;
+	display: inline-block;
+	float: left;
+	overflow: hidden;
+	cursor: pointer;
+	width: 45%;
+	height: 350px;
+}
+figure figcaption p,h2,div{
+	transition: all 0.35s;
+}
+
+.bg1{
+	background: #c78b47;
+}
+.bg1 figcaption p{ 
+	color: #000;
+	transform: translate(-200%,0%);
+	padding: 1%;
+	margin: 1%;
+}
+.bg1 figcaption h2{
+	transform: translate(-200%,0%);
+	color: #000;
+}
+.bg1 img{ transform: translate(0%,0%);}
+.bg1 figcaption p:nth-of-type(1){ transition-delay: 0.05s; }
+.bg1 figcaption p:nth-of-type(2){ transition-delay: 0.1s; }
+.bg1 figcaption p:nth-of-type(3){ transition-delay: 0.15s; }
+.bg1 figcaption p:nth-of-type(4){ transition-delay: 0.2s; }
+.bg1 figcaption p:nth-of-type(5){ transition-delay: 0.25s; }
+.bg1:hover figcaption p{ transform: translate(0%,0%); }
+.bg1:hover figcaption h2{ transform: translate(0%,0%); }
+.bg1:hover  img{ transform: translate(-30px,-30px); opacity: 1; }
+.bg2 figcaption{
+	margin: 3%;
+	bottom: 10%;
+}
+.bg2 figcaption p{ 
+	transform:translate(-200%,0%) rotate(90deg);
+}
+.bg2 img{ transform:scale(1,1); }
+.bg2:hover figcaption p{ transform:translate(20%,20%) rotate(0deg); }
+.bg2:hover img{ transform:scale(1.1,1.1); }
+
+.bg3 figcaption{width: 100%;height: 100%;}
+.bg3 div{
+	position: absolute;
+	top: 10%;
+	left: 10%;
+	width: 80%;
+	height: 80%;
+	border: 2px solid #000;
+	background: rgba(0,0,0,0);
+	transform: scale(2,2);
+}
+.bg3 img{
+	transform: scale(1,1);
+}
+.bg3:hover div{
+	transform: scale(1,1);
+}
+.bg3:hover img{
+	transform: scale(1.2,1.2);
+}
+
+.bg4 figcaption{width: 100%;height: 100%;}
+
+.bg4 img{
+	width: 100%;
+	height: 100%;
+}
+
+.bg4 figcaption h2{
+	background: #000;
+	color: #FFF;
+	margin: 0;
+	padding: 3%;
+	width: 100%;
+	height: 20%;
+	left: 0;
+	bottom: 0;
+	transform: translate(0%,-200%);
+}
+
+.bg4:hover figcaption h2{
+	transform: translate(0%,0%);
+}
+
+.project{
+	background: rgba(0,0,0,0.7);
+	border-radius: 10px;
+	padding: 3%;
+	font-size: 2rem;
+	margin-top: 2%;
+}
+.btn{
+	color: #000;
+	border: 2px solid #000;
+	background: rgba(0,0,0,0);
+}
+a,a:hover{text-decoration: none;color: #fff;}
+@media screen and (min-width: 701px) and (max-width: 1000px){
+	.info{
+		width: 70%;
+		margin-left: -35%; 
+	}
+	.skillinfo{
+		width: 80%;
+		margin-left: -40%;
+	}
+}
+@media screen and (max-width: 700px){
+	.info{
+		width: 80%;
+		margin-left: -40%; 
+	}
+	.skillinfo{
+		width: 80%;
+		margin-left: -40%;
+	}
+}
+@media screen and (min-width: 1001px){
+	.info{
+		width: 60%;
+		margin-left: -30%; 
+	}
+	.skillinfo{
+		width: 70%;
+		margin-left: -35%;
+	}
+}
+figure figcaption{
+	position: absolute;
+	top: 0;
+	left: 0;
+	font-family: "微软雅黑";
+	font-size: 2rem;
+}
+figure figcaption p{
+	transition: all 0.35s;
+}
+.skill img{
+	transition: all 0.35s;
+}
+
+@keyframes showphoto{
+	from{
+		top: -5%;opacity: 0;
+	}
+	to{
+		top: 3%;opacity: 1;
+	}
+}
+@-moz-keyframes showphoto{
+	from{
+		top: -5%;opacity: 0;
+	}
+	to{
+		top: 3%;opacity: 1;
+	}
+}
+@-webkit-keyframes showphoto{
+	from{
+		top: -5%;opacity: 0;
+	}
+	to{
+		top: 3%;opacity: 1;
+	}
+}
+@keyframes showinfo{
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
+}
+@-moz-keyframes showinfo{
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
+}
+@-webkit-keyframes showinfo{
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
+}
+@keyframes slideup{
+	from{
+		top:0%;
+		opacity: 1;
+	}
+	to{
+		top:-200%;
+		opacity: 1;
+	}
+}
+@-moz-keyframes slideup{
+	from{
+		top:0%;
+		opacity: 1;
+	}
+	to{
+		top:-200%;
+		opacity: 1;
+	}
+}
+@-webkit-keyframes slideup{
+	from{
+		top:0%;
+		opacity: 1;
+	}
+	to{
+		top:-200%;
+		opacity: 1;
+	}
+}
+@keyframes show{
+	from{
+		top:0%;
+		opacity: 0;
+	}
+	to{
+		top:3%;
+		opacity: 1;
+	}
+}
+@-moz-keyframes show{
+	from{
+		top:0%;
+		opacity: 0;
+	}
+	to{
+		top:3%;
+		opacity: 1;
+	}
+}
+@-webkit-keyframes show{
+	from{
+		top:0%;
+		opacity: 0;
+	}
+	to{
+		top:3%;
+		opacity: 1;
+	}
+}
